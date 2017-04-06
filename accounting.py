@@ -1,3 +1,14 @@
+def underpaid(path):
+    """ This function displays list of underpaying customers.
+
+    Given path to a data file of customer data in the format:
+    Customer #|customer name|# melons|customer paid
+    This function will calculate which customers have underpaid
+    and print a list of the underpaying customers in format:
+    customer name, how much they paid, how much the should have paid, difference
+    """
+ 
+
 melon_cost = 1.00
 
 customer1_name = "Joe"
