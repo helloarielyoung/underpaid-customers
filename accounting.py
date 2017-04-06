@@ -14,7 +14,7 @@ def underpaid(file_path):
     #initialize variables
     melon_cost = 1.00
 
-    #iterate through and tokenize the data from the file
+    #iterate through the file and split the lines into fields
     for line in the_file:
         line = line.rstrip()
         words = line.split('|')
@@ -22,6 +22,8 @@ def underpaid(file_path):
         customer_name = words[1]
         customer_melons = int(words[2])
         customer_paid = float(words[3])
+
+        #calculate the expected payment
         expected = customer_melons * melon_cost
 
         #print those who underpaid
