@@ -26,8 +26,8 @@ def underpaid(file_path):
         #calculate the expected payment
         expected = customer_melons * melon_cost
 
-        #print those who underpaid
-        if customer_paid < expected:
+        #print those who underpaid or overpaid
+        if customer_paid != expected:
             print customer_name, "paid {:.2f}, expected {:.2f}".format(
                 customer_paid, expected)
     the_file.close()
